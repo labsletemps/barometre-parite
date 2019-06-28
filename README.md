@@ -1,1 +1,1 @@
-# barometre-parite
+# Baromètre de la parité en temps réel
