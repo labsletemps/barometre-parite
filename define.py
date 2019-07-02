@@ -8,4 +8,6 @@ config = {
     'mqtt-broker': os.getenv('MQTT-BROKER'),
     'mqtt-topic': os.getenv('MQTT-TOPIC'),
     'get-opinions': os.getenv('GET-OPINIONS'),
+    'send-sql-opinions': os.getenv('SEND-SQL-OPINIONS'),
+    'opinions-writer-list': os.getenv('OPINIONS-WRITER-LIST'),
 }
