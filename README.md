@@ -10,7 +10,7 @@ Développement possible: utiliser Wikidata pour obtenir le genre des personnalit
 
 ### Base de données sqlite
 
-**[sqlite](sqlite)** crée deux tables, une pour les mentions dans les articles, une autre pour les signatures d’opinions.
+**[sqlite](sqlite)**: scripts php pour créer deux tables, une pour les mentions dans les articles, une autre pour les signatures d’opinions.
 
 ### Config
 
