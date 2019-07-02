@@ -12,6 +12,10 @@ Développement possible: utiliser Wikidata pour obtenir le genre des personnalit
 
 **[create-database.py](create-database.py)**: crée deux tables, une pour les mentions dans les articles, une autre pour les signatures d’opinions.
 
+### Baromètre électronique
+
+**[paritometre_sketch.ino](paritometre_sketch.ino)**: sketch pour animer un baromètre «en dur» constitué d’une carte électronique avec puce Wi-Fi, d’une planche et d’une aiguille. Le premier prototype, beaucoup plus simple, [est disponible ici](https://github.com/palrogg/bieg).
+
 ### Config
 
 Editer le fichier **.dist.env** et le renommer .env
