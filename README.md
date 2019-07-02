@@ -1,12 +1,12 @@
 # Baromètre de la parité en temps réel
 
 ### Mentions dans les articles
-**[scraper.py](scraper.py)**: repère les noms propres grâce à Spacy, leur attribue un genre.
+**[parser-stories.py](scraper.py)**: repère les noms propres grâce à Spacy, leur attribue un genre.
 
 Développement possible: utiliser Wikidata pour obtenir le genre des personnalités.
 
 ### Auteurs d’opinions
-**[scraper-opinions.py](scraper-opinions.py)**: compte le genre des auteurs d’opinions écrites par la rédaction (éditoriaux, chroniques)et par des contributeurs externes (pages débats).
+**[parser-opinions.py](scraper-opinions.py)**: compte le genre des auteurs d’opinions écrites par la rédaction (éditoriaux, chroniques)et par des contributeurs externes (pages débats).
 
 ### Base de données sqlite
 
@@ -14,4 +14,4 @@ Développement possible: utiliser Wikidata pour obtenir le genre des personnalit
 
 ### Config
 
-Editer le fichier **.dist.env** et le renommer .env
+Editer le fichier **.env.dist** et le renommer .env
