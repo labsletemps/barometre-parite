@@ -1,3 +1,5 @@
+import sqlite3
+
 def create_connection(db_file):
     """ create a database connection to the SQLite database
         specified by db_file
@@ -9,7 +11,7 @@ def create_connection(db_file):
         return conn
     except Error as e:
         print(e)
- 
+
     return None
 
 def create_table(conn, create_table_sql):
@@ -26,7 +28,7 @@ def create_table(conn, create_table_sql):
 
 def main():
     database = "./dabatase.db"
- 
+
     sql_create_projects_table = """CREATE TABLE IF NOT EXISTS article_ratio (
     id         INTEGER         PRIMARY KEY AUTOINCREMENT,
     titre      VARCHAR( 250 ),
@@ -38,7 +40,7 @@ def main():
     unknown    INTEGER,
     ratio      DECIMAL (10,5)
   );"""
- 
+
     sql_create_tasks_table = """CREATE TABLE IF NOT EXISTS opinions (
     id         INTEGER         PRIMARY KEY AUTOINCREMENT,
     titre      VARCHAR( 250 ),
@@ -48,8 +50,8 @@ def main():
     female     INTEGER,
     unknown    INTEGER
 );"""
- 
-    # create a database connection
+
+     # create a database connection
     conn = create_connection(database)
     if conn is not None:
         # create projects table
