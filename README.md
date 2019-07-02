@@ -1,7 +1,7 @@
 # Baromètre de la parité en temps réel
 
 ### Mentions dans les articles
-**[parser-stories.py](parser-stories.py)**: repère les noms propres grâce à Spacy, leur attribue un genre.
+**[parser.py](parser.py)**: repère les noms propres grâce à Spacy, leur attribue un genre.
 
 Développement possible: utiliser Wikidata pour obtenir le genre des personnalités.
 
@@ -10,8 +10,8 @@ Développement possible: utiliser Wikidata pour obtenir le genre des personnalit
 
 ### Base de données sqlite
 
-**[sqlite](sqlite)**: scripts php pour créer deux tables, une pour les mentions dans les articles, une autre pour les signatures d’opinions.
+**[create-database.py](create-database.py)**: crée deux tables, une pour les mentions dans les articles, une autre pour les signatures d’opinions.
 
 ### Config
 
-Editer le fichier **.env.dist** et le renommer .env
+Editer le fichier **.dist.env** et le renommer .env
