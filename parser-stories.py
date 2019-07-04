@@ -24,8 +24,7 @@ import struct
 # Get the stories as json
 
 response = requests.get(config['get-stories'])
-data = response.json()
-df = pd.DataFrame(data)
+df = pd.DataFrame(response.json())
 
 nlp = spacy.load('fr')
 d = gender.Detector()
@@ -99,11 +98,12 @@ df['ratio'] = df['score'].apply(computeRatio)
 
 df['percentage'] = df['ratio'].apply(lambda x: "{0:.2f}%".format(x*100) if x == x else 'n/a')
 
-mean = df['ratio'].mean() * 100
-
 ################
 # MQTT
 #
+
+# on prend les 25 derniers
+mean = df[25:]['ratio'].mean() * 100
 
 client = mqtt.Client("xoxox")
 client.connect(config['mqtt-broker'], port=1883)
