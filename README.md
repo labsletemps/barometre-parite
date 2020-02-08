@@ -16,6 +16,11 @@ Développement possible: utiliser Wikidata pour obtenir le genre des personnalit
 
 **[paritometre_sketch.ino](paritometre_sketch.ino)**: sketch pour animer un baromètre «en dur» constitué d’une carte électronique avec puce Wi-Fi, d’une planche et d’une aiguille. Le premier prototype, beaucoup plus simple, [est disponible ici](https://github.com/palrogg/bieg).
 
+**[Schéma électronique avec Fritzing](schema_electronique.fzz)**
+
+Aperçu:
+![Aperçu du schéma de montage](schema_electronique.png)
+
 ### Config
 
 Editer le fichier **.dist.env** et le renommer .env
